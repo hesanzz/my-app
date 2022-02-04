@@ -1,0 +1,3 @@
+[submodule "src/component/diagnal-webplayer"]
+	path = src/component/diagnal-webplayer
+	url = https://github.com/diagnal/diagnal-webplayer
