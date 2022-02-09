@@ -4,7 +4,7 @@ import BitmovinPlayer from './BitmovinPlayer';
 function Splash() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <p>
           Edit <code>me</code>
         </p>
@@ -14,9 +14,9 @@ function Splash() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React js
+          React js
         </a>
-      </header>
+      </header> */}
       <BitmovinPlayer />
     </div>
   );
