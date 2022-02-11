@@ -1,8 +1,10 @@
+/* eslint-disable */ 
 import DPlayer from './diagnal-webplayer/src/core/DPlayer';
 import Bitmovin from './diagnal-webplayer/src/players/Bitmovin';
 import BitmovinEvents from './diagnal-webplayer/src/players/Bitmovin/BitmovinEvents';
 import { log } from './diagnal-webplayer/src/utils/common';
-
+import Theoplayer from './theoplayer';
+import TheoplayerEvents from './theoplayer/TheoplayerEvents';
 const wrapperEvents = BitmovinEvents;
 
 const events = {
@@ -44,7 +46,9 @@ const InitPlayer = () => {
       },
     },
   };
-  return DPlayer.createPlayer(Bitmovin, playerConfig);
+  return DPlayer.createPlayer(Theoplayer, {device: 'web', wrapperEvents});
+  // return DPlayer.createPlayer(Bitmovin, playerConfig);
+
 };
 
 export default InitPlayer;
